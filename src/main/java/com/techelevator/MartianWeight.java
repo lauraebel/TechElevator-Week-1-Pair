@@ -22,27 +22,22 @@ public class MartianWeight {
 
 	public static void main(String[] args) {
 		// Wm == Mars  We == Earth
+		
 		double earthGravity = 0.378; // placement may not matter, attempt both out and inside of "Scanner in"
 		
 		Scanner in = new Scanner(System.in);
 		
-		System.out.println("Your weight on Earth: ");
-		
-		
+		System.out.println("Enter a weight on Earth (number only): ");
 		String userInput = in.nextLine();
 		
 		double earthWeight = Double.parseDouble(userInput);
 		
 		double marsWeight = earthWeight * earthGravity;
 		
-		System.out.println(marsWeight);
-		
-		public double [] weightsOnMars() {
-			double[] array = {98.0, 235.0, 185.0};
-			return;
-	
+		System.out.println("You entered " + earthWeight + " pounds on Earth which converts to " + marsWeight + " pounds on Mars.");
+
 		}
 
 	}
 
-}
+
